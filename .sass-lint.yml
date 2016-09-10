@@ -1,0 +1,40 @@
+#########################
+## Sample Sass Lint File
+#########################
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: true
+# File Options
+files:
+  include: 'app/styles/**/*.scss'
+# Rule Configuration
+rules:
+  # Class names should follow BEM
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+  # No styling id selectors
+  no-ids: 2
+  # No !important rule
+  no-important: 2
+  # Hex values should be lowercase for color picker
+  hex-notation:
+    - 1
+    -
+      style: lowercase
+  leading-zero:
+    - 1
+    -
+      include: true
+  # Indent by two
+  indentation:
+    - 1
+    -
+      size: 2
+  # Properties should be Box, Border, Background, Text, Other
+  property-sort-order:
+    - 1
+    -
+      order: smacss

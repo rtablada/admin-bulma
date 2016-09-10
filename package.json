@@ -1,0 +1,42 @@
+{
+  "name": "admin-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "ember serve -lrp 35729",
+    "test": "ember test -s",
+    "build": "ember build",
+    "lint": "sass-lint",
+    "esfix": "eslint src --fix && eslint tests --fix",
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist my-app.surge.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "normalize-css": "^2.3.1",
+    "whatwg-fetch": "^1.0.0",
+    "yoga-sass": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "broccoli": "^0.16.9",
+    "broccoli-autoprefixer": "^4.1.0",
+    "broccoli-babel-transpiler": "6.0.0-alpha.1",
+    "broccoli-browserify-cache": "^2.0.1",
+    "broccoli-csso": "^2.0.0",
+    "broccoli-funnel": "^1.0.5",
+    "broccoli-inject-livereload": "^0.2.0",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-sass-source-maps": "^1.8.0",
+    "broccoli-sourcemap-concat": "^1.1.6",
+    "broccoli-stew": "^1.3.0",
+    "ember-cli": "^2.8.0",
+    "eslint": "^2.4.0",
+    "eslint-config-rtablada": "^3.1.0",
+    "loader.js": "^4.0.11",
+    "sass-lint": "^1.9.1",
+    "testem": "^1.11.0"
+  }
+}
