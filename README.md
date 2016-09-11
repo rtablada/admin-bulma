@@ -31,3 +31,7 @@ This stylesheet also includes a few basic modifiers to compliment the existing B
 * `.button.is-hover-only` - A button that has no background or border, but when hovered uses a background to compliment the sidebar
 * `.is-fullwidth` - Sets width 100% and flex grow
 * `.is-scrollable-y` - Sets overflow-y to scroll (useful for independently scrolling admin sections)
+
+# License
+
+This software is licensed under the [MIT license](LICENSE.md).

@@ -1,0 +1,27 @@
+{
+  "name": "bulma-admin-bar",
+  "version": "1.0.0",
+  "description": "A quick and easy way to create admin interfaces with Bulma CSS.",
+  "main": "sass/bulma-admin-bar.scss",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtablada/admin-bulma.git"
+  },
+  "keywords": [
+    "Bulma",
+    "CSS",
+    "admin"
+  ],
+  "author": "Ryan Tablada <ryan.tablada@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rtablada/admin-bulma/issues"
+  },
+  "homepage": "https://github.com/rtablada/admin-bulma#readme"
+}
