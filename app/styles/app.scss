@@ -10,13 +10,14 @@ $f-title: 'Comfortaa', cursive;
 
 .full-screen-app {
   display: flex;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
 
   overflow: hidden;
 }
 
 .main-nav {
+  flex-shrink: 0;
   background: $c-main-nav-bg;
 
   color: $c-main-nav-text;
@@ -59,6 +60,29 @@ $f-title: 'Comfortaa', cursive;
       .is-show-on-collapse {
         display: initial;
       }
+    }
+  }
+}
+
+.is-fullwidth {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.is-scrollable-y {
+  overflow-y: scroll;
+}
+
+.button {
+  &.is-hover-only {
+    transition: 0.4s ease-in;
+
+    border: 0;
+    outline: none;
+    background: none;
+
+    &:hover {
+      background: rgba($c-main-nav-bg, 0.2);
     }
   }
 }

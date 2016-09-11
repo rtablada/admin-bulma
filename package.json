@@ -16,6 +16,7 @@
   "dependencies": {
     "bulma": "^0.1.2",
     "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0",
     "normalize-css": "^2.3.1",
     "whatwg-fetch": "^1.0.0",
     "yoga-sass": "^1.0.1"
