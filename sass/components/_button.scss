@@ -1,6 +1,6 @@
 .button {
   &.is-hover-only {
-    transition: 0.4s ease-in;
+    transition: $t-animation ease-in;
 
     border: 0;
     outline: none;
