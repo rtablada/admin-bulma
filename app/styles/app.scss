@@ -7,6 +7,7 @@ $c-main-nav-bg: hsl(0, 4%, 20%);
 $c-main-nav-text: #e6e6e6;
 $d-main-nav-border: lighten($c-main-nav-bg, 8%) solid 0.1rem;
 $f-title: 'Comfortaa', cursive;
+$t-animation: 300ms;
 
 .full-screen-app {
   display: flex;
@@ -24,6 +25,8 @@ $f-title: 'Comfortaa', cursive;
 
   &-title {
     padding: 0.8rem $m-main-nav-gutter;
+    transition: font-size $t-animation;
+
     border-bottom: $d-main-nav-border;
 
     font-family: $f-title;
@@ -41,6 +44,14 @@ $f-title: 'Comfortaa', cursive;
       padding: $m-main-nav-gutter;
       border-bottom: $d-main-nav-border;
     }
+
+    .is-animiated-on-collapse {
+      display: inline-block;
+
+      max-width: 15rem;
+      transition: max-width ($t-animation * 2);
+      overflow: hidden;
+    }
   }
 
   &.is-collapse {
@@ -53,12 +64,8 @@ $f-title: 'Comfortaa', cursive;
         text-align: center;
       }
 
-      span {
-        display: none;
-      }
-
-      .is-show-on-collapse {
-        display: initial;
+      .is-animiated-on-collapse {
+        max-width: 0;
       }
     }
   }
