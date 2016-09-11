@@ -9,6 +9,8 @@ const CssOptimizer = require('broccoli-csso');
 const Funnel = require('broccoli-funnel');
 const Babel = require('broccoli-babel-transpiler');
 const mv = require('broccoli-stew').mv;
+const rm = require('broccoli-stew').rm;
+const log = require('broccoli-stew').log;
 const browserify = require('broccoli-browserify-cache');
 
 let pubFiles = new LiveReload('public');
@@ -21,8 +23,9 @@ const stylePaths = [
   'app/styles',
   'node_modules',
 ];
+const appNoSass = rm('app', '**/*.scss');
 
-const babelScript = new Babel('app');
+const babelScript = new Babel(appNoSass);
 
 const appScript = browserify(babelScript, {
   entries: ['./index'],
