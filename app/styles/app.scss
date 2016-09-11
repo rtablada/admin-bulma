@@ -1,6 +1,64 @@
-// @import 'yoga-sass/assets/yoga';
-// @import 'normalize-css/normalize';
-
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
-@import 'box-sizing';
+@import 'bulma/bulma';
+
+$m-main-nav-gutter: 0.6rem;
+$c-main-nav-bg: hsl(0, 4%, 20%);
+$c-main-nav-text: #e6e6e6;
+$d-main-nav-border: lighten($c-main-nav-bg, 8%) solid 0.1rem;
+$f-title: 'Comfortaa', cursive;
+
+.full-screen-app {
+  display: flex;
+  width: 100vh;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.main-nav {
+  background: $c-main-nav-bg;
+
+  color: $c-main-nav-text;
+
+  &-title {
+    padding: 0.8rem $m-main-nav-gutter;
+    border-bottom: $d-main-nav-border;
+
+    font-family: $f-title;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+
+    text-align: center;
+  }
+
+  &-list {
+    font-size: 1.2rem;
+
+    li {
+      padding: $m-main-nav-gutter;
+      border-bottom: $d-main-nav-border;
+    }
+  }
+
+  &.is-collapse {
+    .main-nav-title {
+      font-size: 1rem;
+    }
+
+    .main-nav-list {
+      li {
+        text-align: center;
+      }
+
+      span {
+        display: none;
+      }
+
+      .is-show-on-collapse {
+        display: initial;
+      }
+    }
+  }
+}
