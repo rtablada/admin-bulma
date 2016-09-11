@@ -22,7 +22,7 @@ The styles for this admin bar include the following components:
 * `.main-nav` - Collapsable sidebar nav
   * `.main-nav-title` - Title for sidebar navs
   * `.main-nav-list` - List of links for sidebar navs
-  * `.is-animiated-on-collapse` - Span or similar that collapses it's width when the parent `.main-nav` toggles the `.is-collapse` class
+  * `.is-animated-on-collapse` - Span or similar that collapses it's width when the parent `.main-nav` toggles the `.is-collapse` class
 
 # Additional Modifiers
 
