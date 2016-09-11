@@ -22,6 +22,7 @@ if (process.env.EMBER_ENV === 'production') {
 const stylePaths = [
   'app/styles',
   'node_modules',
+  '../sass',
 ];
 const appNoSass = rm('app', '**/*.scss');
 

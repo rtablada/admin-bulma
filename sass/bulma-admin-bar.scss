@@ -1,0 +1,11 @@
+$m-main-nav-gutter: 0.6rem !default;
+$c-main-nav-bg: hsl(0, 4%, 20%) !default;
+$c-main-nav-text: #e6e6e6 !default;
+$d-main-nav-border: lighten($c-main-nav-bg, 8%) solid 0.1rem !default;
+$f-title: 'Comfortaa', cursive !default;
+$t-animation: 300ms !default;
+
+@import 'components/app';
+@import 'components/modifiers';
+@import 'components/main-nav';
+@import 'components/button';

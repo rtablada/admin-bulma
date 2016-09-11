@@ -1,0 +1,53 @@
+.main-nav {
+  flex-shrink: 0;
+  background: $c-main-nav-bg;
+
+  color: $c-main-nav-text;
+
+  &-title {
+    padding: 0.8rem $m-main-nav-gutter;
+    transition: font-size $t-animation;
+
+    border-bottom: $d-main-nav-border;
+
+    font-family: $f-title;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+
+    text-align: center;
+  }
+
+  &-list {
+    font-size: 1.2rem;
+
+    li {
+      padding: $m-main-nav-gutter;
+      border-bottom: $d-main-nav-border;
+    }
+
+    .is-animiated-on-collapse {
+      display: inline-block;
+
+      max-width: 15rem;
+      transition: max-width ($t-animation * 2);
+      overflow: hidden;
+    }
+  }
+
+  &.is-collapse {
+    .main-nav-title {
+      font-size: 1rem;
+    }
+
+    .main-nav-list {
+      li {
+        text-align: center;
+      }
+
+      .is-animiated-on-collapse {
+        max-width: 0;
+      }
+    }
+  }
+}
